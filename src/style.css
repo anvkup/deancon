@@ -1,0 +1,501 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Karla:wght@700&family=Rubik+Glitch&display=swap');
+
+/* Document setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.page--background {
+    background-color: rgba(255, 255, 255, 0.979);
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Main container */
+.app--main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 400px;
+    background-color: rgb(228, 228, 228);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Info (Nav) container & children */
+.info--container {
+    text-align: center;
+    position: relative;
+}
+
+.info--theme__icon {
+    text-decoration: none;
+    margin: 0 2px;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px 0px 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    left: 365px;
+    top: 5px;
+    opacity: 0.8;
+}
+
+.info--code__link {
+    text-decoration: none;
+    margin: 0 2px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 0px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 365px;
+    top: 35px;
+    opacity: 0.5;
+}
+
+.info--picture {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+
+.info--container > h1 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 35px;
+}
+
+.info--container > h4 {
+    padding: 0px;
+    padding-bottom: 15px;
+    margin: 0;
+    font-weight: lighter;
+    color: rgb(149, 45, 247);
+}
+
+.info--email__link, 
+.info--linkedin__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 40px;
+    margin: 0px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info--email__link {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.info--linkedin__link {
+    background-color: rgb(13, 79, 181);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.info--email__link > span, 
+.info--linkedin__link > span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.info--container > a:hover {
+    opacity: 0.8;
+}
+
+/* Main container (About & Interests) */
+.main--container {
+    padding: 0px 40px;
+}
+
+.main--title {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main--text {
+    font-size: small;
+    line-height: 1.5;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.main--images {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main--images > img {
+    width: 50px;
+    border-radius: 30px;
+    margin: 0px 10px 10px 10px;
+}
+
+.main--prompt__text {
+    font-size: 11px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+/* Footer container & children */
+.footer--container {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(201, 201, 201);
+    padding: 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+} 
+
+.footer--container > a:hover {
+    opacity: 0.8;
+}
+
+.footer--github__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+}
+
+.footer--pages__popup {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px 1px rgb(213, 213, 213);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer--github__link > span, .footer--pages__popup > span {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+/* Popup */
+.popup--container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+/* Popup header */
+.popupHeader--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.popupHeader--logo {
+    width: 50px;
+    height: auto;
+    margin: 0px 5px;
+}
+
+.popupHeader--title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0px 5px;
+}
+
+/* Popup main */
+.popupMain {
+    height: 850px;
+    overflow: scroll;
+    width: 375px;
+}
+
+.popupMain--line {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.popupMain--container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.popupMain--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popupMain--title {
+    font-size: 25px;
+    margin: 10px 0px 0px 10px;
+}
+
+.popupMain--date {
+    font-size: 12px;
+    margin: 0px 0px 0px 15px;
+}
+
+.popupMain--links {
+    margin: 10px 10px 0px 0px;
+}
+
+.popupMain--links > a {
+    text-decoration: none;
+    margin: 0 2px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 0px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.popupMain--links .popupMain--site__link {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex-inline;
+}
+
+.popupMain--links > a:hover {
+    opacity: 0.8;
+}
+
+.popupMain--image {
+    width: 80%;
+    border-radius: 5px;
+    margin: 10px 0px;
+    align-self: center;
+}
+
+.popupMain--about {
+    font-size: 14px;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.popupMain--languages {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.popupMain--languages > span {
+    margin: 0px 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 6px 5px 0px 5px;
+}
+
+.popupMain--language__html {
+    background-color: rgb(218, 54, 29);
+    color: rgb(255, 255, 255);
+}
+
+.popupMain--language__css {
+    background-color: rgb(68, 43, 104);
+    color: rgb(255, 255, 255);
+}
+
+.popupMain--language__scss {
+    background-color: rgb(193, 78, 136);
+    color: rgb(255, 255, 255);
+}
+
+.popupMain--language__js {
+    background-color: rgb(238, 219, 73);
+    color: rgb(0, 0, 0);
+}
+
+.popupMain--language__react {
+    background-color: rgb(82, 210, 250);
+    color: rgb(255, 255, 255);
+}
+
+/* Popup footer */
+.popupFooter--container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.popupFooter--container > button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+.popupFooter--container > button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.dark.page--background {
+    background-color: rgba(70, 70, 70, 0.979);
+}
+
+.dark .app--main__container {
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+}
+
+.dark .info--theme__icon {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.dark .info--container > h1 {
+    color: rgb(255, 255, 255);
+}
+
+.dark .info--container > h4 {
+    color: rgb(208, 171, 241);
+}
+
+.dark .info--email__link {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--title {
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--text {
+    color: rgb(255, 255, 255);
+}
+
+.dark .main--prompt__text {
+    color: rgb(233, 233, 233);
+}
+
+.dark .footer--container {
+    background-color: rgb(17, 17, 17);
+}
+
+.dark .footer--github__link {
+    background-color: rgb(54, 54, 54);
+    color: rgb(255, 255, 255);   
+}
+
+.dark .popup--container {
+    background-color: rgb(44, 44, 44);
+}
+
+.dark .popupHeader--container {
+    background-color: rgb(23, 23, 23);
+    color: rgb(255, 255, 255);
+}
+
+.dark .popup--container .popupMain {
+    color: rgb(255, 255, 255);
+}
+
+.dark .popup--container .popupMain--links > a {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.dark .popup--container .popupFooter--container > button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);   
+}
+
+.dark .popupFooter--container {
+    background-color: rgb(23, 23, 23);
+}
+
+@media only screen and (max-width: 600px) {
+    .app--main__container {
+        width: 300px;
+    }
+
+    .info--theme__icon {
+        left: 265px;
+    }
+
+    .info--code__link {
+        left: 265px;
+    }
+
+    .info--container > h4 {
+        font-size: 13px;
+    }
+
+    .popup--container {
+        width: 270px;
+    }
+
+    .popupMain {
+        height: 400px; 
+        width: 270px;
+    }
+
+    .popupMain--title {
+        font-size: 22px;
+    }
+
+    .popupMain--links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popupMain--links > a {
+        margin: 2px 0px;
+    }
+}

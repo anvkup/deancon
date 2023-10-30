@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Footer from "./components/Footer"
+import Info from "./components/Info"
+import Main from "./components/Main"
+import Popup from "./components/Popup"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+
+    const [darkMode, setDarkMode] = React.useState(false)
+
+    function toggleDarkMode() {
+        setDarkMode(prevMode => !prevMode)
+    }
+
+    const [pagesPopup, setPagesPopup] = React.useState(false)
+
+    function openPopup() {
+        setPagesPopup(true)
+    }
+
+    return (
+        <div className={`page--background ${darkMode ? "dark" : ""}`}>
+
+            <div className={`app--main__container ${darkMode ? "dark" : ""}`}>
+                <Info 
+                    darkMode={darkMode}
+                    toggleDarkMode={toggleDarkMode}
+                />
+                <Main darkMode={darkMode}/>
+                <Footer 
+                    darkMode={darkMode}
+                    openPopup={openPopup}
+                />
+            </div>
+
+            <div className={`popup--container ${darkMode ? "dark" : ""}`}>
+                <Popup 
+                    trigger={pagesPopup} 
+                    setTrigger={setPagesPopup}
+                    darkMode={darkMode}
+                />
+            </div>
+            
+        </div>
+    )
 }
-
-export default App;
