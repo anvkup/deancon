@@ -2,18 +2,13 @@ import React from "react";
 
 function Contact() {
   return (
-    <div
-      style={{
-        background: "black",
-      }}
-    >
+    <div>
       <h2
         style={{
           display: "flex",
           flex: "center",
           justifyContent: "center",
           margin: "7px",
-          background: "",
         }}
       >
         Contact

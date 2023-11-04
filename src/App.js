@@ -5,6 +5,7 @@ import Main from "./components/Main";
 
 import Contact from "./components/Contact";
 import CounterUpPage from "./components/CounterUpPage";
+import Video from "./components/Video";
 
 export default function App() {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -25,6 +26,7 @@ export default function App() {
         <Info darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Main darkMode={darkMode} />
         <Footer darkMode={darkMode} openPopup={openPopup} />
+        <Video />
         <CounterUpPage />
         <Contact />
       </div>

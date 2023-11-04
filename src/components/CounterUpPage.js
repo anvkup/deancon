@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const CounterUpPage = () => {
   const [counterOn, SetCounterOn] = useState(false);
@@ -14,7 +13,7 @@ const CounterUpPage = () => {
       <div className="">
         <div
           style={{
-            marginTop: "30px",
+            marginTop: "100px",
           }}
         >
           <h2>Our Achivements</h2>
