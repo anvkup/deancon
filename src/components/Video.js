@@ -36,6 +36,7 @@ const Video = () => {
           justifyContent: "center",
           margin: "7px",
           marginTop: "30px",
+          overflow: "hidden",
         }}
       >
         Video Gallery

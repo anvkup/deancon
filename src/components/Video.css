@@ -21,3 +21,8 @@
 .carousel:hover .carousel-control-next-icon {
   visibility: visible;
 }
+@media only screen and (max-width: 600px) {
+  .carousel {
+    width: 300px;
+  }
+}
